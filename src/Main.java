@@ -38,5 +38,12 @@ public class Main {
         System.out.println(united.getName() + " " + united.ranking());
         System.out.println(barcelona.getName() + " " + barcelona.ranking());
 
+        League<FootballPlayer, Team<FootballPlayer>> league = new League<>("Super League");
+        league.add(manchester);
+        league.add(barcelona);
+        league.add(united);
+        //league.add(crows);
+        league.showLeagueTable();
+
     }
 }
